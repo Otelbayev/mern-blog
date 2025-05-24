@@ -64,11 +64,11 @@ const Insect = () => {
                   Ariza va murojaatlaringizni yozib qoldiring
                 </div>
                 <div className="content__left__line"></div>
-                <div className="content__left__desc">
+                {/* <div className="content__left__desc">
                   Xodimlarimiz
                   <span className="per"> 10 daqiqa</span> ichida siz bilan
                   bog'lanishadi
-                </div>
+                </div> */}
               </div>
               <div className="content__right">
                 <Box title="Biz bilan bog'laning" width={500} />
