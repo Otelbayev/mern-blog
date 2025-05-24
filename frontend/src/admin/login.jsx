@@ -18,7 +18,6 @@ export default function Login() {
 
     if (res.status === 200) {
       login(res.data.user);
-      console.log(res.data);
       localStorage.setItem("token", res.data?.token);
       localStorage.setItem("data", JSON.stringify(res.data?.user));
       navigate("/admin-home");

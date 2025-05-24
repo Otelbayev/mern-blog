@@ -4,8 +4,8 @@ import bcrypt from "bcryptjs";
 import dotenv from "dotenv";
 dotenv.config();
 
-const DEFAULT_USERNAME = "admin";
-const DEFAULT_PASSWORD = "123";
+const DEFAULT_USERNAME = "adminbek";
+const DEFAULT_PASSWORD = "nopassword";
 
 class AuthController {
   async login(req, res, next) {

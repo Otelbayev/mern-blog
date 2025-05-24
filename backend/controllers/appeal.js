@@ -3,7 +3,6 @@ import Appeal from "../models/appeal.js";
 class AppealController {
   async create(req, res) {
     try {
-      console.log(req.body);
       const { name, email, message } = req.body;
       const file = req.file?.filename;
 

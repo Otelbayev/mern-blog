@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import img from "../../assets/img1.jpeg";
 
 export const Container = styled.div`
   height: 320px;
@@ -23,7 +22,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: ${({ $bg }) => `url(${$bg || img})`};
+    background-image: ${({ $bg }) => `url(${$bg})`};
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
