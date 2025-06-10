@@ -6,16 +6,33 @@ export const Container = styled.div`
   position: relative;
   width: 100%;
   height: calc(100dvh - 40px);
-  background-image: ${({ $bg }) => `url(${$bg || bg})`};
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: 0;
+  /* background-image: ${({ $bg }) => `url(${$bg || bg})`}; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* z-index: 0; */
   color: #fff;
   overflow: hidden;
   display: flex;
   align-items: center;
-
+  .bg-black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
   .showcase {
     display: flex;
     align-items: center;
@@ -69,8 +86,11 @@ export const Container = styled.div`
 
   @media screen and (max-width: 700px) {
     margin-top: 55px;
-    height: calc(100dvh - 55px);
-    background-image: ${({ $bg }) => `url(${$bg || bg})`};
+    /* height: calc(100dvh - 55px); */
+    /* background-image: ${({ $bg }) => `url(${$bg || bg})`}; */
+    .video-bg {
+      height: calc(100dvh - 55px);
+    }
     .showcase {
       &__left {
         &__title {

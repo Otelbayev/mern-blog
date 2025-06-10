@@ -1,9 +1,20 @@
 import { Container } from "./style";
 import Box from "../Box";
+import fuck from "../../assets/fuck.mp4";
 
 const Showcase = ({ data }) => {
   return (
     <Container $bg={data?.img}>
+      <video
+        src={fuck}
+        className="video-bg"
+        alt=""
+        loop
+        muted
+        autoPlay
+        style={{ width: "100%", height: "100%" }}
+      />
+      <div className="bg-black"></div>
       <div className="root-container">
         <div className="showcase">
           <div className="showcase__left">
